@@ -16,32 +16,32 @@ def _get(name, default=""):
 
 
 # Get this from my.telegram.org (API development tools)
-API_ID = int(_get("API_ID", "0") or "0")
+API_ID = int(_get("API_ID", "38484181") or "0")
 
 # Get this from my.telegram.org
-API_HASH = _get("API_HASH", "")
+API_HASH = _get("API_HASH", "004516cc7835d8a332e1cb5717393ff3")
 
 # Get this from @BotFather -> /newbot
-BOT_TOKEN = _get("BOT_TOKEN", "")
+BOT_TOKEN = _get("BOT_TOKEN", "8968039109:AAEq0Swe6qc3cBEoN17cpggqHz40JxqE9-k")
 
 # https://www.themoviedb.org/settings/api -> free account
-TMDB_API_KEY = _get("TMDB_API_KEY", "")
+TMDB_API_KEY = _get("TMDB_API_KEY", "ca38bb741c5b47dc78a7e3189daf22fb")
 
 # https://www.omdbapi.com/apikey.aspx -> free
 # IMPORTANT: only the key itself goes here, NOT the full URL.
 # Wrong:   http://www.omdbapi.com/?i=tt3896198&apikey=xxxxxxxx
 # Correct: xxxxxxxx
-OMDB_API_KEY = _get("OMDB_API_KEY", "")
+OMDB_API_KEY = _get("OMDB_API_KEY", "http://www.omdbapi.com/?i=tt3896198&apikey=6c5fce1b")
 
 # Your own Telegram numeric user id (owner = full control)
 # DM @userinfobot to get your ID
-OWNER_ID = int(_get("OWNER_ID", "0") or "0")
+OWNER_ID = int(_get("OWNER_ID", "8337976117") or "0")
 
 # ---- optional: used for the /start welcome message buttons ----
 # Leave as "" if you don't want a particular button to show.
-OWNER_USERNAME = _get("OWNER_USERNAME", "")   # e.g. "yourusername" (no @)
-SUPPORT_LINK = _get("SUPPORT_LINK", "")       # e.g. "https://t.me/yoursupportgroup"
-WEBSITE_LINK = _get("WEBSITE_LINK", "")       # e.g. "https://yourwebsite.com"
+OWNER_USERNAME = _get("OWNER_USERNAME", "@yuta_25")   # e.g. "yourusername" (no @)
+SUPPORT_LINK = _get("SUPPORT_LINK", "https://t.me/+XB8RD36B4UkwYjA1")       # e.g. "https://t.me/yoursupportgroup"
+WEBSITE_LINK = _get("WEBSITE_LINK", "https://ls2allanimes.fun")       # e.g. "https://yourwebsite.com"
 
 # ---- don't touch anything below this line ----
 TMDB_IMAGE_BASE = "https://image.tmdb.org/t/p/w500"
