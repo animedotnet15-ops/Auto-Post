@@ -6,10 +6,9 @@ TMDb / IMDb (via OMDb) poster + auto-formatted caption maker Telegram bot.
 
 ```bash
 pip install -r requirements.txt
-cp .env.example .env
 ```
 
-Fill in `.env`:
+Open `config.py` and fill in your values directly in the file (no `.env` needed):
 
 | Variable | Where to get it |
 |---|---|
@@ -56,8 +55,8 @@ TMDb/OMDb — you don't have to type them.
 
 ## 4. Admin Portal
 
-`/admin` — only visible to the **owner** (from `.env`) and any admins the
-owner has added.
+`/admin` — only visible to the **owner** (set in `config.py`) and any admins
+the owner has added.
 
 - **Edit Caption Template** — send a new template using placeholders:
   `{title} {season} {episode} {language} {quality} {imdb} {genres}`
@@ -80,7 +79,7 @@ get access to a paid IMDb image API, just swap the logic inside
 ## 6. Files
 
 - `bot.py` — all bot logic (Pyrogram)
-- `config.py` — reads `.env`
+- `config.py` — your API keys/tokens go here directly
 - `database.py` — JSON-based settings/admin store
 - `tmdb_api.py` — TMDb search/images/details
 - `omdb_api.py` — IMDb poster + rating via OMDb
